@@ -7,6 +7,7 @@
 
 import UIKit
 import SDWebImage
+import Kingfisher
 
 class ViewController: UIViewController {
 
@@ -19,7 +20,8 @@ class ViewController: UIViewController {
     
     func extractImageAndBind(){
         let url = URL(string: "https://cdn.dummyjson.com/products/images/smartphones/Oppo%20A57/thumbnail.png")
-        imageView1.sd_setImage(with: url,
-                               placeholderImage: UIImage(named: "test_image_2"))
+//        imageView1.sd_setImage(with: url,placeholderImage: UIImage(named: "test_image_2"))
+        
+        imageView1.kf.setImage(with: url!,placeholder: UIImage(named: "test_image_2"))
     }
 }

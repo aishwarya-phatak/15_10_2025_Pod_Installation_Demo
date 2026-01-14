@@ -8,5 +8,6 @@ target '15_10_2025_Pod_Installation_Demo' do
   # Pods for 15_10_2025_Pod_Installation_Demo
 
 	pod 'SDWebImage', '~> 5.0'
+  pod 'Kingfisher', '~> 7.0'
 
 end
