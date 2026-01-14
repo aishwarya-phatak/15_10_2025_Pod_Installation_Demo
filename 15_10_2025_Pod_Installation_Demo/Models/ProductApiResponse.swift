@@ -6,3 +6,7 @@
 //
 
 import Foundation
+
+struct ProductApiResponse : Decodable{
+    var products : [Product]
+}

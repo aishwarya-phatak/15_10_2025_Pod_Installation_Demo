@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 70;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,6 +14,7 @@
 		68125A5A2F161EAB00D98199 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 68125A4E2F161EAB00D98199 /* Assets.xcassets */; };
 		68125A5C2F161EAB00D98199 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68125A512F161EAB00D98199 /* LaunchScreen.storyboard */; };
 		68125A5D2F161EAB00D98199 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68125A532F161EAB00D98199 /* Main.storyboard */; };
+		68E634DC2F17613F000CE709 /* ProductsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68E634DB2F17613F000CE709 /* ProductsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,10 +26,15 @@
 		68125A522F161EAB00D98199 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		68125A542F161EAB00D98199 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		68125A552F161EAB00D98199 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		68E634DB2F17613F000CE709 /* ProductsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsViewController.swift; sourceTree = "<group>"; };
 		957F50FD595CAD8EC3B8EB87 /* Pods-15_10_2025_Pod_Installation_Demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-15_10_2025_Pod_Installation_Demo.debug.xcconfig"; path = "Target Support Files/Pods-15_10_2025_Pod_Installation_Demo/Pods-15_10_2025_Pod_Installation_Demo.debug.xcconfig"; sourceTree = "<group>"; };
 		BC939BACA56D9987D04C9D69 /* Pods_15_10_2025_Pod_Installation_Demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_15_10_2025_Pod_Installation_Demo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE5951A181B66B14A97501AA /* Pods-15_10_2025_Pod_Installation_Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-15_10_2025_Pod_Installation_Demo.release.xcconfig"; path = "Target Support Files/Pods-15_10_2025_Pod_Installation_Demo/Pods-15_10_2025_Pod_Installation_Demo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		68E634DD2F1761CF000CE709 /* Models */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Models; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		68125A222F161B8900D98199 /* Frameworks */ = {
@@ -72,6 +78,7 @@
 		68125A562F161EAB00D98199 /* 15_10_2025_Pod_Installation_Demo */ = {
 			isa = PBXGroup;
 			children = (
+				68E634DD2F1761CF000CE709 /* Models */,
 				68125A4D2F161EAB00D98199 /* AppDelegate.swift */,
 				68125A4E2F161EAB00D98199 /* Assets.xcassets */,
 				68125A4F2F161EAB00D98199 /* Info.plist */,
@@ -79,6 +86,7 @@
 				68125A532F161EAB00D98199 /* Main.storyboard */,
 				68125A542F161EAB00D98199 /* SceneDelegate.swift */,
 				68125A552F161EAB00D98199 /* ViewController.swift */,
+				68E634DB2F17613F000CE709 /* ProductsViewController.swift */,
 			);
 			path = 15_10_2025_Pod_Installation_Demo;
 			sourceTree = "<group>";
@@ -107,6 +115,9 @@
 			buildRules = (
 			);
 			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				68E634DD2F1761CF000CE709 /* Models */,
 			);
 			name = 15_10_2025_Pod_Installation_Demo;
 			productName = 15_10_2025_Pod_Installation_Demo;
@@ -190,9 +201,13 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-15_10_2025_Pod_Installation_Demo/Pods-15_10_2025_Pod_Installation_Demo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
+			inputPaths = (
+			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-15_10_2025_Pod_Installation_Demo/Pods-15_10_2025_Pod_Installation_Demo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -208,6 +223,7 @@
 			files = (
 				68125A572F161EAB00D98199 /* AppDelegate.swift in Sources */,
 				68125A582F161EAB00D98199 /* SceneDelegate.swift in Sources */,
+				68E634DC2F17613F000CE709 /* ProductsViewController.swift in Sources */,
 				68125A592F161EAB00D98199 /* ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
